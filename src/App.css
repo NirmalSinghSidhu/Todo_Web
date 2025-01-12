@@ -1,0 +1,167 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+body.dark {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1.light {
+  color: #333;
+}
+
+h1.dark {
+  color: #f8f9fa;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+/* Task Section Styles */
+.task-section {
+  display: flex;
+  flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+  justify-content: space-around;
+  gap: 20px; /* Adds space between TaskBoxes */
+  margin-top: 30px;
+}
+
+.task-box {
+  width: 22%; /* Makes boxes uniform and fit in a row */
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.3s ease;
+}
+
+.task-box.light {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-box.dark {
+  background-color: #343a40;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.task-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.task-box h3.light {
+  color: #007bff;
+}
+
+.task-box h3.dark {
+  color: #66d9ef;
+}
+
+.task-box p {
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.task-box p.light {
+  color: #666;
+}
+
+.task-box p.dark {
+  color: #dcdcdc;
+}
+
+/* TaskTable Styles */
+.task-table {
+  margin-top: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.task-table.light {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-table.dark {
+  background: #343a40;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.task-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.task-table th.light {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-table th.dark {
+  background-color: #495057;
+  color: #f8f9fa;
+}
+
+.task-table td.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.task-table td.dark {
+  background-color: #495057;
+  color: #f8f9fa;
+}
+
+.task-table tr:hover td.light {
+  background-color: #eef5ff;
+}
+
+.task-table tr:hover td.dark {
+  background-color: #5a6268;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .task-section {
+    flex-direction: column; /* Stack boxes on smaller screens */
+    align-items: center;
+  }
+
+  .task-box {
+    width: 90%; /* Full width on smaller screens */
+  }
+}

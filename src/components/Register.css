@@ -1,0 +1,66 @@
+/* Styling for the Register component */
+
+/* Overall container for the register form */
+.register {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.register h2 {
+  text-align: center;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form input styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Register button styling */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .register {
+    width: 90%;
+  }
+}
